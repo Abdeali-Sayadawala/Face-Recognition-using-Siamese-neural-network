@@ -34,16 +34,16 @@ label = list()
 for i in range(len(images)):
     for j in range(len(images)):
         if i == j:
-            for x in range(10):
-                for y in range(10):
+            for x in range(5):
+                for y in range(5):
                     sample1.append(images[i][x])
                     sample2.append(images[j][y])
                     label.append(1)
         else:
-            for x in range(10):
-                for y in range(10):
+            for x in range(5):
+                for y in range(5):
                     sample1.append(images[i][x])
-                    sample2.append(images[j][x])
+                    sample2.append(images[j][y])
                     label.append(0)
         
 x1 = np.array(sample1)
